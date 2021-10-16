@@ -1,0 +1,54 @@
+[
+    {
+        "nome": "João",
+        "sobrenome": "Batista",
+        "empresa": "UsinaCar",
+        "endereco": "Da Mata",
+        "numero": "503",
+        "pais": "Brasil",
+        "cidade": "Limeira",
+        "estado": "São Paulo",
+        "cep": "023477-937",
+        "telefone": "4567-3947",
+        "emai": "joaobbtst@email.com.br"
+    },
+    {
+        "nome": "Maria",
+        "sobrenome": "Carmen",
+        "empresa": "LimpHouse",
+        "endereco": "Coronel Jeca tatu",
+        "numero": "208",
+        "pais": "Brasil",
+        "cidade": "São Bento",
+        "estado": "Rio de Janeiro",
+        "cep": "193277-009",
+        "telefone": "97457-0643",
+        "emai": "maricarlimp@email.com.br"
+    },
+    {
+        "nome": "João",
+        "sobrenome": "Candido",
+        "empresa": "Aposents",
+        "endereco": "DeTerraRocha",
+        "numero": "05",
+        "pais": "Brasil",
+        "cidade": "Dourados",
+        "estado": "Mato Grosso Do Sul",
+        "cep": "234477-567",
+        "telefone": "90347-9763",
+        "emai": "jctrms@emailteste.com.br"
+    },
+    {
+        "nome": "Lola",
+        "sobrenome": "Gordzilla",
+        "empresa": "DogsLabraloca",
+        "endereco": "Rua Onde For",
+        "numero": "10001",
+        "pais": "Brasil",
+        "cidade": "Atibaia",
+        "estado": "São Paulo",
+        "cep": "02098-952",
+        "telefone": "98887-0001",
+        "emai": "labralocagordzilla@socomeedorme.com.br"
+    }
+]
