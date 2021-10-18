@@ -51,6 +51,8 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         cy.get('.woocommerce-terms-and-conditions-checkbox-text').click()
         cy.get('#place_order').click({ force: true })
 
+        cy.get('.woocommerce-notice').should('contain', 'pedido foi recebido.')
+
              
     });
 
