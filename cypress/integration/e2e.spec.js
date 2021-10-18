@@ -34,18 +34,33 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
 
     });
 
-    it('Deve adicionar produtos ao carrinha - Usando Comando Customizado', () => {
+    it.only('Deve adicionar produtos ao carrinha - Usando Comando Customizado', () => {
         //(produto, tamanho, cor, quantidade)
         cy.addProdutos('Ariel Roll Sleeve Sweatshirt', 'S', 'Red', 4)
         
         cy.get('.woocommerce-message').should('contain', 'foram adicionados no seu carrinho.')
+
+        cy.get('.woocommerce-message > .button').click()
+        cy.get('.checkout-button').click()
+        cy.get('.showlogin').click()
+
+        cy.get('#username').type('aluno_ebac@teste.com')
+        cy.get('#password').type('teste@teste.com')
+        cy.get('.woocommerce-button').click()
+
+        cy.get('.woocommerce-terms-and-conditions-checkbox-text').click()
+        cy.get('#place_order').click()
+        
+        
+        
+       
     });
 
     it('Deve adicionar produtos ao carrinha - Usando Comando Customizado', () => {
         //(produto, tamanho, cor, quantidade)
         cy.addProdutos('Aether Gym Pant', '36', 'Blue', 4)
 
-        cy.get('.woocommerce-message').should('contain', 'foi adicionado no seu carrinho.')
+        cy.get('.woocommerce-message').should('contain', 'foram adicionados no seu carrinho.')
 
     });
 
