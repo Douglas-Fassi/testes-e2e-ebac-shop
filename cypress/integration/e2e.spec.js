@@ -19,7 +19,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
             .click()
     });
 
-    it('Deve adicionar um produto ao carrinho', () => {
+    /*it('Deve adicionar um produto ao carrinho', () => {
         var quantidade = 4
 
         cy.get('[class="product-block grid"]')
@@ -32,7 +32,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         cy.get('.dropdown-toggle > .mini-cart-items').should('contain', quantidade)
         cy.get('.woocommerce-message').should('contain', quantidade + ' × “Ariel Roll Sleeve Sweatshirt” foram adicionados no seu carrinho.')
 
-    });
+    });*/
 
     it('Deve adicionar produtos ao carrinho - Usando Comando Customizado', () => {
         //(produto, tamanho, cor, quantidade)
