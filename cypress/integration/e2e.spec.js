@@ -34,7 +34,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
 
     });
 
-    it.only('Deve adicionar produtos ao carrinho - Usando Comando Customizado', () => {
+    it('Deve adicionar produtos ao carrinho - Usando Comando Customizado', () => {
         //(produto, tamanho, cor, quantidade)
         cy.addProdutos('Ariel Roll Sleeve Sweatshirt', 'S', 'Purple', 4)
         
