@@ -24,8 +24,8 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
 
         cy.get('[class="product-block grid"]')
             .contains('Ariel Roll Sleeve Sweatshirt').click()
-        cy.get('.button-variable-item-S').click()
-        cy.get('.button-variable-item-Purple').click()
+        cy.get('.button-variable-item-L').click()
+        cy.get('.button-variable-item-Red').click()
         cy.get('.input-text').clear().type(quantidade)
         cy.get('.single_add_to_cart_button').click()
 
@@ -36,7 +36,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
 
     it('Deve adicionar produtos ao carrinho - Usando Comando Customizado', () => {
         //(produto, tamanho, cor, quantidade)
-        cy.addProdutos('Ariel Roll Sleeve Sweatshirt', 'S', 'Purple', 4)
+        cy.addProdutos('Ariel Roll Sleeve Sweatshirt', 'L', 'Red', 4)
         
         cy.get('.woocommerce-message').should('contain', 'foram adicionados no seu carrinho.')
 
